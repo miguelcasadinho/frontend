@@ -1,0 +1,40 @@
+.card {
+  background-color: white;
+  border: 1px solid #d1d9e6;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1px;
+  width: 20 rem; /* Ensures the box width adjusts to its content */
+  margin-bottom: 1px; /* Adds spacing between statsBox elements */
+}
+  
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: auto;
+  margin-bottom: 10px;
+  color: #0054A6;
+}
+
+.value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: auto;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #0054A6;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}

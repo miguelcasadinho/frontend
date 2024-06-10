@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
+    padding: 2rem 1rem;
+    height: 75px;
+    background: white;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+   .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0054A6;
+    letter-spacing: 0.015rem;
+  }
+
+  .logo {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+  }
+
+  .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem; 
+  }
+
+   

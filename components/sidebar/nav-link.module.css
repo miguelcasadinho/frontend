@@ -1,0 +1,18 @@
+.link {
+  padding: 0rem 0rem;
+  font-family: 'Montserrat', sans-serif; 
+  }
+  
+  .link:hover{
+    color:rgba(173, 216, 230, 1);
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+
+  }
+
+.active {
+    color:rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+  }
+
