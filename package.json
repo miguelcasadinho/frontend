@@ -10,14 +10,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/date-picker": "^2.1.1",
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
     "moment": "^2.30.1",
     "next": "14.2.3",
     "pg": "^8.12.0",
     "react": "^18",
-    "react-datepicker": "^6.9.0",
-    "react-datetime-picker": "^6.0.1",
     "react-dom": "^18"
   },
   "devDependencies": {

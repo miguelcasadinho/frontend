@@ -1,24 +1,25 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import DateTimePicker from 'react-datetime-picker';
+import React, { useState } from "react";
+import { DatePicker } from "@nextui-org/date-picker";
+import { now, getLocalTimeZone } from "@internationalized/date";
+import classes from './timePicker.module.css'; 
 
-import classes from './timePicker.module.css';
-
-const TimePicker = () => {
-  const [dateTime, setDateTime] = useState(new Date());
+export default function TimePicker() {
+  const [selectedDate, setSelectedDate] = useState(now(getLocalTimeZone()));
 
   return (
-    <div className={classes.grafana-light}>
-    <DateTimePicker
-      onChange={setDateTime}
-      value={dateTime}
-      className={classes.custom-time-picker} // Add custom class for styling
-      calendarClassName={classes.custom-calendar} // Add custom class for calendar styling
-      format="HH:mm:ss" // Adjust date format if needed
-    />
+    <div className={classes.container}>
+      <label className={classes.label} htmlFor="date-picker">Event Date</label>
+      <DatePicker
+        id="date-picker"
+        className="time-picker"
+        variant="bordered"
+        hideTimeZone
+        showMonthAndYearPickers
+        value={selectedDate}
+        onChange={setSelectedDate}
+      />
     </div>
   );
-};
-
-export default TimePicker;
+}

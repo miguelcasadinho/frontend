@@ -1,71 +1,37 @@
-/* Apply styles to the container div */
-.grafana-light {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Use the appropriate font */
-  color: #232323; /* Text color */
+.container {
+  padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-/* Apply styles to the DateTimePicker component */
-.custom-time-picker {
-  border: 1px solid #ccc; /* Border color */
-  border-radius: 4px; /* Border radius */
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
 }
 
-/* Apply styles to the calendar icon */
-.react-datetime-picker__button:after {
-  content: ""; /* Clear default content */
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent; /* Adjust arrow size */
-  border-right: 5px solid transparent; /* Adjust arrow size */
-  border-top: 5px solid #999; /* Arrow color */
+.time-picker {
+  width: 100%;
+  border-radius: 4px;
 }
 
-/* Apply styles to the input field */
-.react-datetime-picker__inputGroup__input {
-  border: none; /* Remove input border */
-  background-color: transparent; /* Transparent background */
-  padding: 8px; /* Adjust padding */
+.time-picker input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
-/* Apply styles to the dropdown calendar */
-.react-calendar {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Use the appropriate font */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Box shadow */
-  border: 1px solid #ccc; /* Border color */
-  border-radius: 4px; /* Border radius */
-}
-
-/* Apply styles to the calendar navigation buttons */
-.react-calendar__navigation__label,
-.react-calendar__navigation__arrow {
-  color: #007bff; /* Navigation button color */
-}
-
-/* Apply styles to the calendar weekdays */
-.react-calendar__month-view__weekdays__weekday abbr {
-  color: #666; /* Weekday abbreviation color */
-}
-
-/* Apply styles to the selected date */
-.react-calendar__tile--active {
-  background-color: #007bff; /* Selected date background color */
-  color: #fff; /* Selected date text color */
-}
-
-/* Apply styles to the today button */
-.react-calendar__tile--now {
-  background-color: #f5f5f5; /* Today button background color */
-  color: #007bff; /* Today button text color */
-}
-
-/* Apply styles to the day tiles */
-.react-calendar__tile {
-  border: none; /* Remove tile border */
-  padding: 6px; /* Adjust padding */
-}
-
-/* Apply styles to the disabled dates */
-.react-calendar__tile--disabled {
-  color: #999; /* Disabled date text color */
+.time-picker input:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 5px rgba(0, 112, 243, 0.5);
 }

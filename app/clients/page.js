@@ -7,7 +7,7 @@ export default async function Login () {
     return (
         <div className={classes.container}>
             <h1 className={classes.header}>
-                Log In
+                Clientes
             </h1>
 
         </div>

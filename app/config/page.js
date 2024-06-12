@@ -3,11 +3,11 @@ import classes from './page.module.css';
 
 
 
-export default async function Login () {
+export default async function config () {
     return (
         <div className={classes.container}>
             <h1 className={classes.header}>
-                Log In
+                Configurações
             </h1>
 
         </div>
