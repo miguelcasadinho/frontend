@@ -23,9 +23,10 @@
   .main {
     gap: 3rem;
     padding: 1rem;
-    margin: 3rem auto 5rem auto;
+    margin: 0rem auto 5rem auto;
     width: 90%;
     max-width: 50rem;
+    line-height: 1.5;
     color: #103f54;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;

@@ -1,24 +1,25 @@
 .link {
     text-decoration: none;
-    color: #0054A6;
+    /*color: #0054A6;*/
+    color: #103f54;
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-  }
+}
   
-  .link:hover {
-    background: linear-gradient(90deg, black, white);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.link:hover {
+  background: linear-gradient(90deg, black, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-    text-shadow: 0 0 18px gray;
-  }
+  text-shadow: 0 0 18px gray;
+}
 
 .active {
     background: linear-gradient(90deg, #103f54, black);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
 

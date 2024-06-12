@@ -22,13 +22,14 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #0054A6;
+    /*color: #0054A6;*/
+    color: #103f54;
     letter-spacing: 0.015rem;
   }
 
   .logo {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     object-fit: contain;
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
   }

@@ -14,7 +14,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: auto;
   margin-bottom: 10px;
-  color: #0054A6;
+  color: #103f54;
 }
 
 .value {
@@ -22,11 +22,11 @@
   font-size: auto;
   font-weight: bold;
   margin: 10px 0;
-  color: #0054A6;
+  color: #103f54;
 }
 
 .button {
-  background-color: #007bff;
+  background-color: #103f54;
   color: #fff;
   border: none;
   padding: 10px 20px;

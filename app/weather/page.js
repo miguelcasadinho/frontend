@@ -25,7 +25,7 @@ async function GetWheather(){
     )
 };
 
-export default function weatherData () {
+export default function WeatherData () {
     return (
             <div className={classes.container}>
                 <h1 className={classes.header}>

@@ -1,6 +1,8 @@
 .link {
   padding: 0rem 0rem;
   font-family: 'Montserrat', sans-serif; 
+  position: relative;
+  display: inline-block;
   }
   
   .link:hover{
@@ -16,3 +18,28 @@
     -webkit-background-clip: padding-box;
   }
 
+
+
+/* Add Tooltip text */
+.link::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 50%; /* Position it below the link */
+    left: 300%;
+    transform: translateX(-50%);
+    /*background-color: #0054A6;*/
+    background-color: #103f54;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap; /* Prevent line breaks */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.link:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
