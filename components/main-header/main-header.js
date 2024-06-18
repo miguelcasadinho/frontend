@@ -13,7 +13,7 @@ export default function MainHeader() {
         <header className={classes.container}>
             <Link className={classes.header} href="/">
             <Image src={logoImg} alt="Next Evolution" className={classes.logo} priority />
-                NeoH2O 
+                NeoH2O
             </Link>
 
             <nav className={classes.nav}>

@@ -1,6 +1,9 @@
 import StatCard from '@/components/dashboards/stat-card/stat-card';
+import TextSubmit from '@/components/forms/text-submit';
+import TextOutput from '@/components/forms/text-output';
 
-import SitCont from '@/lib/aqua/contratos/groupbysit';
+import {SitCont, Client} from '@/lib/aqua/aqua';
+
 
 import classes from './page.module.css';
 
@@ -22,14 +25,36 @@ async function Situation(){
     )
 };
 
+const DataDisplay = ({ data }) => {
+    return (
+      <div>
+        {Object.entries(data).map(([key, value]) => (
+          <div key={key}>
+            <strong>{key}:</strong> {String(value)}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
 export default async function Clients () {
+    const data = await Client(28834);
     return (
         <div className={classes.container}>
             <h1 className={classes.header}>
                 Clientes
             </h1>
             <Situation />
-        </div>
+            <main className={classes.main}>
+                <h1 className={classes.header}>
+                    Pesquisa de Cliente
+                </h1>
+                <TextSubmit htmlFor="client" label="Número de Cliente" type="text" name="client">Pesquisar</TextSubmit>
+                <TextOutput>
+                    <DataDisplay data={data[0]} />
+                </TextOutput>
+            </main>
+        </div>                 
     )
     
 }

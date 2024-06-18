@@ -5,8 +5,8 @@
   align-items: center;
   font-family: 'Montserrat', sans-serif; 
   min-height: calc(100vh - 75px);
-  margin-top: 75px;
-  margin-left: 75px; 
+  margin-top: 50px;
+  margin-left: 50px; 
   padding: 0 2rem;
   background-image: url('/images/WaterTexture.jpg');
   background-size: cover;
@@ -14,14 +14,30 @@
   background-repeat: no-repeat;
 }
 
+
 .header {
-  margin-top: 5rem;
-  font-size: 3rem;
-  font-weight: bold;
+  gap: 3rem;
+  margin: 3rem auto 2rem auto;
+  width: 90%;
+  max-width: 75rem;
   color: #103f54;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.8);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 2rem; /* Adjust font size for small displays */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.5rem; /* Further adjust font size for very small displays */
+  }
 }
 
 .content {
@@ -31,11 +47,22 @@
   max-width: 800px;
   padding: 1.5rem;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.8);
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    font-size: 1rem; /* Adjust font size for small displays */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    font-size: 0.8rem; /* Further adjust font size for very small displays */
+  }
 }
 
 .bold {
-  font-size: 1.5rem;
   font-weight: bold;
   text-decoration: underline;
 }

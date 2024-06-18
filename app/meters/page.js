@@ -1,6 +1,6 @@
 import StatCard from '@/components/dashboards/stat-card/stat-card';
 
-import MarCont from '@/lib/aqua/contadores/groupbybrand';
+import {MarCont} from '@/lib/aqua/aqua';
 
 import classes from './page.module.css';
 

@@ -1,6 +1,6 @@
 .sidebar {
     height: 100vh;
-    width: 75px;
+    width: px;
     position: fixed;
     left: 0;
     background-color: white;
@@ -20,23 +20,27 @@
     align-content: space-between;
     padding: 1rem 1rem;
     height: 100%;
-    background: white;
+    background: #103f54;
     /*color: #0054A6;*/
-    color: #103f54;
+    color: white;
     position: fixed; 
-    top: 78px;
-    width: 75px; 
+    top: 50px;
+    width: 50px; 
     z-index: 1000; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
-  
+
+.container > :first-child {
+  margin-top: -15px;
+}
+
 .container h2 {
   text-align: center;
 }
 
 .container ul {
   list-style-type: none;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0rem;
 
 }
 

@@ -3,13 +3,13 @@ import moment from 'moment';
 
 import StatCard from '@/components/dashboards/stat-card/stat-card';
 
-import wheather from '@/lib/weather/weather';
+import {weather} from '@/lib/weather/weather';
 
 import classes from './page.module.css';
 
 
-async function GetWheather(){
-    const data = await wheather();
+async function GetWeather(){
+    const data = await weather();
     return (
             <div className={classes.container_dash}>
                 <StatCard title = 'Temperatura' value = { `${parseFloat(data[0].air_temperature).toFixed(1)} º` }/>
@@ -31,7 +31,7 @@ export default function WeatherData () {
                 <h1 className={classes.header}>
                     Estação Meteorológica
                 </h1>
-                <GetWheather />
+                <GetWeather />
             </div>         
     )
 }

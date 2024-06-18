@@ -9,7 +9,7 @@ export default function Home() {
       <h1 className={classes.header}>Welcome to NeoH<sub>2</sub>O</h1>
       <div className={classes.content}>
         <p className={classes.bold}>
-        <Link  href='/login'>Please Log In!</Link>
+        <Link  style={{color:'#103f54'}} href='/login'>Please Log In!</Link>
         </p>
       </div>
     </div>

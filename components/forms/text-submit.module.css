@@ -1,0 +1,68 @@
+.form {
+    max-width: 15rem;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color:  #103f54;
+    font-weight: bold;
+  }
+  
+  .form input,
+  .form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #d1d9e6;
+    border-radius: 8px;
+    background: white;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    color:  #103f54;
+  }
+  
+  .form input:focus,
+  .form textarea:focus {
+    outline-color:  #103f54;
+    background-color: white;
+  }
+  
+  .row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .row p {
+    width: 100%;
+  }
+
+  .button {
+    border: 0;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(90deg, #103f54, #2268ad);
+    border: none;
+    color: #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+      
+    .button:hover,
+    .button:focus {
+    background: linear-gradient(90deg, #103f54, #78a9da);
+    }
+      
+    .button:disabled,
+    .button:hover:disabled,
+    .button:focus:disabled {
+    background: #ccc;
+    color: #979797;
+    cursor: not-allowed;
+    }
+  
