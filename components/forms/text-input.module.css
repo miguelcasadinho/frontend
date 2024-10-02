@@ -1,5 +1,5 @@
-.form {
-    max-width: 50rem;
+  .form {
+    max-width: 15rem;
   }
   
   .form label {
@@ -15,12 +15,12 @@
   .form input,
   .form textarea {
     display: block;
-    width: 50%;
+    width: 100%;
     padding: 0.5rem 1rem;
     border: 1px solid #d1d9e6;
     border-radius: 8px;
     background: white;
-    /*font-size: 1.25rem;*/
+    font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
     color:  #103f54;
   }

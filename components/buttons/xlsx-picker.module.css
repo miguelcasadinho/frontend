@@ -1,0 +1,96 @@
+.controls {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: grid;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .picker .input {
+    display: none;
+  }
+  
+  .picker .button {
+    border: 0;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(90deg, #103f54, #2268ad);
+    border: none;
+    color: #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .picker .button:hover,
+  .picker .button:focus {
+    background: linear-gradient(90deg, #103f54, #78a9da);
+  }
+
+  .preview {
+    width: 18rem;
+    height: auto;
+    border: 2px solid #103f54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #103f54;
+    position: relative;
+  }
+  
+  .preview p {
+    margin: 0;
+    padding: 1rem;
+  }
+
+/* Media query for responsiveness */
+@media screen and (max-width: 1200px) {
+  .picker .button {
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .picker .button {
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .picker .button {
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .picker .button {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 1200px) {
+  .preview {
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .preview {
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .preview {
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .preview {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}

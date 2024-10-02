@@ -1,5 +1,3 @@
-
-
 import MainHeader from '@/components/main-header/main-header.js';
 import Sidebar from '@/components/sidebar/sidebar';
 

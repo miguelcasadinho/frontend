@@ -1,9 +1,9 @@
+
 import StatCard from '@/components/dashboards/stat-card/stat-card';
 import TextSubmit from '@/components/forms/text-submit';
 import TextOutput from '@/components/forms/text-output';
 
 import {SitCont, Client} from '@/lib/aqua/aqua';
-
 
 import classes from './page.module.css';
 
@@ -38,23 +38,37 @@ const DataDisplay = ({ data }) => {
   };
 
 export default async function Clients () {
-    const data = await Client(28834);
-    return (
-        <div className={classes.container}>
-            <h1 className={classes.header}>
-                Clientes
-            </h1>
-            <Situation />
-            <main className={classes.main}>
-                <h1 className={classes.header}>
-                    Pesquisa de Cliente
-                </h1>
-                <TextSubmit htmlFor="client" label="Número de Cliente" type="text" name="client">Pesquisar</TextSubmit>
+
+  async function GetClient(formData) {
+    'use server';
+    const client = {
+        id: formData.get('client')
+    }
+    //console.log(client.id);
+    const data = await Client(client.id);
+    console.log(data);
+    };
+
+  return (
+      <div className={classes.container}>
+          <h1 className={classes.header}>
+              Clientes
+          </h1>
+          <Situation />
+          <main className={classes.main}>
+              <h1 className={classes.header}>
+                  Pesquisa de Cliente
+              </h1>
+              <form action={GetClient}>
+                <TextSubmit htmlFor="client" name="client" label="Número de Cliente">Pesquisar</TextSubmit>
+
                 <TextOutput>
-                    <DataDisplay data={data[0]} />
+               
                 </TextOutput>
-            </main>
-        </div>                 
-    )
+
+              </form>
+          </main>
+      </div>                 
+  )
     
 }

@@ -21,18 +21,6 @@
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    font-size: 2rem; /* Adjust font size for small displays */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .header {
-    font-size: 1.5rem; /* Further adjust font size for very small displays */
-  }
-}
-
 .main {
   gap: 3rem;
   padding: 1rem;
@@ -44,4 +32,16 @@
   font-size: 1.5rem;
   text-align: center;
   text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 2rem; /* Adjust font size for small displays */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 1.5rem; /* Further adjust font size for very small displays */
+  }
 }

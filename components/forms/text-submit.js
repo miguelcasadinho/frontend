@@ -1,18 +1,31 @@
+'use client';
+
+import {useFormState} from 'react-dom';
+
+import { getFormData } from '@/lib/actions';
+import FormSubmit from '@/components/forms/form-submit';
+
 import classes from './text-submit.module.css';
 
-const TextSubmit = ({ htmlFor, label, children, type, name, onChange, onClick }) => {
+const TextSubmit = ({ htmlFor, name, label, children}) => {
+
+ 
   return (
-    <form className={classes.form}>
+    <div className={classes.form}>
         <div className={classes.row}>
             <p>
                 <label htmlFor={htmlFor}>{label}</label>
-                <input type={type} id={htmlFor} name={name} onChange={onChange} required/>
+                <input 
+                  type="text" 
+                  id={name} 
+                  name={name}  
+                  required
+                />
             </p>
         </div>
-        <button className={classes.button} onClick={onClick} type="submit">
-            {children}
-        </button>
-    </form>
+          <FormSubmit className={classes.button} name={children}/>
+          
+    </div>
   );
 };
 

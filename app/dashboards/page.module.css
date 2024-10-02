@@ -21,6 +21,48 @@
   text-transform: uppercase;
 }
 
+.form {
+  max-width: 15rem;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color:  #103f54;
+  font-weight: bold;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d9e6;
+  border-radius: 8px;
+  background: white;
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  color:  #103f54;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline-color:  #103f54;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.row p {
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .header {
     font-size: 2rem; /* Adjust font size for small displays */
